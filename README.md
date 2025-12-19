@@ -1,36 +1,71 @@
-# 🌌 Mind Gallery: Persona Sphere (人格星系)
-> **“将你的碎片化文字，转化为可交互的三维心理宇宙。”**
+# 🌌 Mind Gallery · Persona Sphere
 
-## 💡 什么是 Mind Gallery？
-**Mind Gallery** (又名 Persona Sphere) 是一款融合了 **Three.js 交互艺术**与 **NLP 规则分析**的实验性 Web 应用。它不仅是一个记录工具，更是一个视觉化的“意识博物馆”。通过分析你输入的文字（如日记、随笔或即时情绪），它会实时生成一个独特的、反映你内心景观的 3D 星系。
+> 将文本转化为可交互的三维人格星系的实验性 Web 应用
 
-## ✨ 核心特性
+---
 
-* **三维灵魂可视化 (3D Visualization)**：
-    * **时间轴模式 (Timeline Mode)**：按输入顺序观察情绪的起伏波动。
-    * **人格形态模式 (Humanoid Mode)**：将碎片化的记忆球体聚合成一个发光的“人类形态”，观察你意识的结构中心。
-* **多维人格画像 (Persona Dimensions)**：基于文本启发式算法，实时计算 5 大核心人格维度：外向性、情绪化、亲和力、责任感与自信度。
-* **生长模拟实验室 (Grafting Studio)**：独特的“假如”功能。在你正式记录前，可以模拟输入一段话，预测它将如何微妙地重塑你的性格重心。
-* **语言深度洞察 (Language Insights)**：自动检测文本模式，例如是否过度使用“避风港”式语言或是否存在高强度的情绪波动。
-* **隐私安全 (Privacy First)**：所有文字处理和 3D 渲染均在浏览器本地完成，你的“私人避难所”数据不会被上传。
+## 1. 项目简介
 
-## 🎨 视觉语言指南
-在星系中，每一个记忆球体的颜色都代表了思维的“化学成分”：
-* 🟡 **黄色 (The Fire)**：代表宣泄、愤怒或高强度的情绪释放。
-* 🔴 **红色 (The Spark)**：代表成就感、喜悦或深刻的社交关系。
-* 🔵 **蓝色 (The Stone)**：代表深度的自我省察、学习或忧郁。
-* 🟢 **青色 (The Growth)**：代表日常生活记录与稳定的成长。
+**Mind Gallery（Persona Sphere）** 是一款基于 **Three.js + React** 的交互式可视化应用，用于将用户输入的文本（如日记、情绪记录）解析并映射为一个三维“人格星系”。
 
-## 🚀 快速开始
+系统通过本地启发式文本分析（可选接入 Google Gemini），估计多维人格特征，并以 3D 形式呈现其结构与变化。
 
-### 1. 环境准备
-确保您的电脑已安装 [Node.js](https://nodejs.org/) (建议版本 18+)。
+---
 
-### 2. 下载与安装
-```bash
-# 克隆仓库
-git clone [https://github.com/your-username/mind-gallery.git](https://github.com/your-username/mind-gallery.git)
+## 2. 核心功能
+
+- **3D 星系可视化**
+  - Timeline Mode：按时间顺序展示文本演化
+  - Humanoid Mode：将记忆节点聚合为人格形态
+- **多维人格估计**
+  - 外向性、情绪性、亲和力、责任感、自信度
+- **Grafting Studio**
+  - 在正式记录前模拟文本对人格结构的潜在影响
+- **隐私优先**
+  - 所有分析与渲染均在浏览器本地完成
+
+---
+
+## 3. 运行环境要求
+
+- **Node.js**：v18 或更高（推荐 LTS）
+- **Git**：用于克隆仓库（或使用 ZIP 下载）
+
+---
+
+## 4. 快速开始（完整使用教程）
+
+### Step 1：安装 Node.js
+
+1. 访问：https://nodejs.org/
+2. 下载并安装 **LTS 版本**
+3. 安装完成后，在终端中验证：
+node -v
+
+### Step 2：第二步：获取项目代码 (Clone)
+# 将项目克隆到本地
+git clone https://github.com/你的用户名/mind-gallery.git
+
+# 进入项目文件夹
 cd mind-gallery
 
-# 安装依赖
+### Step 3：安装依赖
 npm install
+
+### Step 4：配置 AI 大脑 (API Configuration - 可选)
+如果你想获得更深层的人格洞察，可以配置 Google Gemini：
+
+前往 Google AI Studio 申请免费密钥。
+
+在项目根目录下手动创建一个文件，重命名为 .env.local。
+
+用记事本打开它，粘贴以下内容：
+GEMINI_API_KEY=你的密钥
+
+### Step 5：正式启动 (Run)
+启动命令：在终端输入 npm run dev。
+
+访问链接：终端会显示 Local: http://localhost:3000/。
+
+进入应用：按住键盘上的 Ctrl (Windows) 或 Command (Mac) 并用鼠标点击这个链接，或者直接在浏览器地址栏输入 localhost:3000。
+
