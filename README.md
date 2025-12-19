@@ -1,8 +1,6 @@
 # 🌌 Mind Gallery: Persona Sphere (人格星系)
 > **“将你的碎片化文字，转化为可交互的三维心理宇宙。”**
 
-[![演示预览](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)](https://ai.studio/apps/drive/10wMO4l_6ANQzdKwARjeJDyQbU2QVvMo_)
-
 ## 💡 什么是 Mind Gallery？
 **Mind Gallery** (又名 Persona Sphere) 是一款融合了 **Three.js 交互艺术**与 **NLP 规则分析**的实验性 Web 应用。它不仅是一个记录工具，更是一个视觉化的“意识博物馆”。通过分析你输入的文字（如日记、随笔或即时情绪），它会实时生成一个独特的、反映你内心景观的 3D 星系。
 
